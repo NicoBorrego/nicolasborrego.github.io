@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="portfolio.css">
+        <style>
+            
+        </style>
+        <title>Nicolas Borrego</title>
+    </head>
+    <body>
+        <div id="general" class="container-fluid w-100">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" id="logo" src="logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#acerca">Acerca de mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <div id="acerca" class="section">
+                <div class="container">
+                    <div class="text-center">
+                        <h4>Hola, soy Nicolás Borrego.</h4>
+                        <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</p>
+                        <p>Estudiante de grado superior de Administración de Sistemas Informáticos en Red, con Ciberseguridad
+                            y Hacking Ético</p>
+                    </div>
+    
+                    <hr style="width: 30%; margin-left: 35%; margin-top: 4vh; padding-bottom: 1vh;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <img class="rounded-circle img-fluid" id="perfil" src="perfil.jpg">
+                            </div>
+                            <div class="col-md-6 text-left" style="padding-top:7vh;">
+                                <p class="fs-5" id="descripcion">
+                                    Soy una persona comprometida, dedicada, seria y responsable en cualquier tarea.
+                                    Me ilusiona la oportunidad de aprender constantemente.<br>
+                                    Mi nivel de inglés es intermedio-alto, y actualmente estoy tomando clases para mejorarlo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>    
+                    <hr style="width: 30%; margin-left: 35%; margin-top: 4vh; padding-bottom: 1vh;">
+                    <div class="text-center">
+                        <h4>Formación</h4>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="btn-group d-flex flex-column">
+                                    <br>
+                                    <button class="btn custom-btn mb-3 w-100" onclick="Visibilidad('btn1')">Grado Superior en Desarrollo de Aplicaciones Multiplataforma</button>
+                                    <button class="btn custom-btn mb-3 w-100" onclick="Visibilidad('btn2')">Grado Superior en Administración de Sistemas Informáticos en Red con Ciberseguridad</button>
+                                    <button class="btn custom-btn mb-3 w-100" onclick="Visibilidad('btn3')">Python 3 desde Cero</button>
+                                    <button class="btn custom-btn mb-3 w-100" onclick="Visibilidad('btn4')">Linux Essentials</button>
+                                    <button class="btn custom-btn mb-3 w-100" onclick="Visibilidad('btn5')">Machine Learning Aplicado Usando Python</button>
+                                </div>                                
+                            </div>
+                            <div class="col-md-5">
+                                <br>
+                                <div id="divEscritura" class="mt-2" style="height: 0; overflow: hidden; display: none; transition: height 0.5s ease-out; max-height: 500px;">
+                                    <h4 id="competenciasTitulo">Competencias</h4>
+                                    <ul id="listaCompetencias"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 30%; margin-left: 35%; margin-top: 4vh; padding-bottom: 1vh;">
+                    <div class="container">
+                        <div class="text-center">
+                            <h4>Experiencia Laboral</h4>
+                        </div>
+                        <br>
+                        <div class="experiencia-item-container">
+                            <div class="experiencia-item">
+                                <h5>Puesto</h5>
+                                <p>Conductor/Repartidor en furgoneta</p>
+                                <h5>Fecha de Inicio - Fecha de Fin</h5>
+                                <p>Mayo 2023 - Agosto 2023</p>
+                                <h5>Empresa</h5>
+                                <p>Bovio Logistics S.L.</p>
+                                <h5>Responsabilidades</h5>
+                                <p>Garantizar  la entrega oportuna y eficiente de productos a clientes, gestionando rutas de entrega de manera efectiva, asegurando la integridad de la carga y cumpliendo con los plazos establecidos.</p>
+                            </div>
+                            <div class="experiencia-item">
+                                <h5>Puesto</h5>
+                                <p>Repartidor en Moto</p>
+                                <h5>Fecha de Inicio - Fecha de Fin</h5>
+                                <p>Enero 2022 - Septiembre 2022</p>
+                                <h5>Empresa</h5>
+                                <p>Food Delivery Brands S.A.</p>
+                                <h5>Responsabilidades</h5>
+                                <p>Garantizar una entrega rápida, eficiente y segura de pedidos a los clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 60%; margin-top: 4vh; padding-bottom: 1vh; margin-left: 20%;">
+            <div id="proyectos" class="section mt-2">
+                <div class="container proyecto-card-container justify-content-center">
+                    <div class="text-center">
+                        <h4>Proyectos</h4> <br>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 25%; padding-bottom: 5vh;">
+                        <div class="col">
+                            <div class="card h-100 proyecto-card">
+                                <img src="NMAP.png" class="card-img-top" alt="NMAP">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nmap-Reports</h5>
+                                    <p class="card-text"><small class="text-muted">10/01/2024</small></p>
+                                    <p class="card-text">Transformación de un xml, obtenido al lanzar el comando nmap, a un html y a un csv.</p>
+                                    <a href="https://github.com/NicoBorrego/Nmap-Reports" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 proyecto-card">
+                                <img src="RavenIP.png" class="card-img-top" alt="RavenIP">
+                                <div class="card-body">
+                                    <h5 class="card-title">RavenIP</h5>
+                                    <p class="card-text"><small class="text-muted">Actualmente</small></p>
+                                    <p class="card-text">Herramienta web que permite la visualización, el control remoto, e informes de clientes a través de Python3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacto" class="section">
+                <div class="container w-100 d-flex flex-column justify-content-center align-items-center bg-body-tertiary" style="height: 20vh;">
+                    <div class="container text-center">
+                        <h4>Contacte conmigo</h4><br>
+                    </div>
+                    <div class="container" style="padding-top: 3vh; margin-left: 42%; margin-bottom: 4vh; width: 100%;">
+                        <a href="tel:+34636931679">
+                            <img src="telefono.png" alt="Telefono" class="img-fluid logo">
+                        </a>
+                        <a href="mailto:nicolasborregogonzalez@outlook.com">
+                            <img src="correo.png" alt="Correo" class="img-fluid logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicol%C3%A1s-borrego-gonz%C3%A1lez-7b49251b2/">
+                            <img src="linkedin.png" alt="Linkedin" class="img-fluid logo">
+                        </a>
+                        <a href="https://github.com/NicoBorrego">
+                            <img src="github.png" alt="Github" class="img-fluid logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-eUZp1zjWlE3Ung5LdGm0eG/k6Ls4dP8FtrS8aSbdvYBZ5ljjV6C1DJKeIbZ1pgNL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script>
+            
+            var ultimaVisibilidad = '';
+            function Visibilidad(btnId) {
+                var divEscritura = document.getElementById('divEscritura');
+                var competenciasTitulo = document.getElementById('competenciasTitulo');
+                var listaCompetencias = document.getElementById('listaCompetencias');
+                if (btnId === ultimaVisibilidad) {
+                // Si se hace clic en el mismo botón, oculta el divEscritura
+                    divEscritura.style.height = '0';
+                    divEscritura.style.display = 'none';
+                    ultimaVisibilidad = '';
+                } else {
+                    // Define el contenido según el botón pulsado
+                    switch (btnId) {
+                        case 'btn1':
+                            competenciasTitulo.innerText = 'Competencias de DAM';
+                            listaCompetencias.innerHTML = '<h5>Bases de Datos:</h5><ol><li>Diseño e implementación de bases de datos relacionales</li><li>Modelo ER</li><li>Conocimientos en MySQL, Oracle (PLSQL)</li></ol><h5>Entornos de Desarrollo:</h5><ol><li>Metodología de programación</li><li>IDEs de desarrollo (Eclipse, Netbeans)</li><li>Modelado UML</li><li>Debugging y testing de aplicaciones</li><li>Diseño orientado a objetos</li><li>Experiencia con BlueJ, Sublime</li></ol><h5>Lenguaje de Marcas y Sistemas de Gestión de Información:</h5><ol><li>HTML, XHTML, XML, XSD, DTD, CSS, XSL, RSS</li><li>ERP, XPath, wQuery, existDB</li></ol><h5>Programación:</h5><ol><li>Programación estructurada en C</li><li>Programación orientada a objetos en Java</li></ol><h5>Sistemas Informáticos:</h5><ol><li>Programación de sistemas en PowerShell y Bash</li><li>Experiencia en entornos Linux y Windows 10</li><li>Virtualización</li><li>Redes de comunicación</li><li>Conocimientos en hardware</li><li>Acceso a datos mediante bases de datos orientadas a objetos, Java con ficheros de texto, XML, XPath y Oracle</li><li>Herramientas ORM (Hibernate) y experiencia con NoSQL (MongoDB)</li></ol><h5>Desarrollo de Interfaces:</h5><ol><li>Desarrollo de interfaces con Java SWING, JavaFX, JasperReport, Jfreechar</li></ol><h5>Programación Multimedia y Dispositivos Móviles:</h5><ol><li>Experiencia con API Android</li><li>Uso de Android Studio</li><li>Diseño de aplicaciones móviles</li></ol><h5>Programación de Servicios y Procesos:</h5><ol><li>Programación multiproceso</li><li>Programación multihilo</li><li>Uso de sockets</li><li>Programación segura</li></ol><h5>Sistemas de Gestión Empresarial:</h5><ol><li>Programación en Python</li><li>Modificación de módulos ERP sobre Odoo</li></ol>';
+                            break;
+                        case 'btn2':
+                            competenciasTitulo.innerText = 'Competencias de ASIR';
+                            listaCompetencias.innerHTML = '<h5>Fundamentos de Hardware:</h5><ol><li>Arquitectura de computadores</li><li>Reparación de equipos</li><li>Clonación de sistemas</li><li>Herramientas de recuperación</li><li>Mantenimiento preventivo</li></ol><h5>Implantación de Sistemas Operativos:</h5><ol><li>Windows 10</li><li>WServer 12/16</li><li>Linux Centos/Debian</li><li>Virtualización</li><li>Gestión de dominios</li><li>Programación de Sistemas: Python, PowerShell y Scripting Linux</li></ol><h5>Planificación y Administración de Redes:</h5><ol><li>Arquitectura de redes</li><li>Protocolos de comunicación</li><li>Enrutamiento</li><li>Redes TCP/IP</li><li>VPN</li><li>Redes virtuales</li></ol><h5>Gestión de Bases de Datos:</h5><ol><li>Diseño e implementación de bases de datos relacionales</li><li>Modelo e-r</li><li>MySQL</li><li>Programación</li></ol><h5>Lenguajes de Marcas y Sistemas de Gestión de Información:</h5><ol><li>HTML, XHTML, XML, XSD, DTD, CSS, XSL, RSS</li><li>ERP, XQuery, JSON</li></ol><h5>Ciberseguridad:</h5><ol><li>Principio de la seguridad informática</li><li>Identificación y análisis de ataques</li><li>Defensa de ciberataques</li><li>Conocimiento de leyes</li></ol><h5>Administración de Sistemas Operativos:</h5><ol><li>Administración de sistemas operativos libres y propietarios</li><li>PowerShell</li><li>Scripting de Linux y Python</li></ol><h5>Servicios de Red e Internet:</h5><ol><li>IPv6</li><li>Servicios DNS, DHCP, WEB, SSH, SFTP, e-mail</li><li>Mensajería instantánea, VOIP, NEWS</li><li>Listas de distribución</li><li>Audio y vídeo streaming</li></ol><h5>Implantación de Aplicaciones Web:</h5><ol><li>Instalación y administración de servidores de aplicaciones web Apache</li><li>Lenguajes orientados a cliente JavaScript y servidor PHP</li><li>Conexión a bases de datos MySQL con PHPMyAdmin</li><li>Bootstrap</li></ol><h5>Administración de Sistemas Gestores de Bases de Datos:</h5><ol><li>Instalación y configuración de SGBD</li><li>Automatización de tareas</li><li>Optimización del rendimiento</li></ol><h5>Hacking Ético:</h5><ol><li>Auditoría de seguridad de principio a fin</li><li>Análisis de sistemas</li><li>Vulnerabilidades</li><li>Explotación y documentación de sistemas</li></ol><h5>Seguridad y Alta Disponibilidad:</h5><ol><li>Seguridad física y lógica</li><li>Criptografía</li><li>Ingeniería social</li><li>Análisis forense</li><li>Hacking Ético</li><li>Sistemas de firewall y Proxy</li><li>IDS, IPS, VPN</li></ol>';
+                            break;
+                        case 'btn3':
+                            competenciasTitulo.innerText = 'Competencias de Python 3';
+                            listaCompetencias.innerHTML = '<h5>Python 3</h5><ol><li>Comprensión de los tipos de datos fundamentales en Python (enteros, flotantes, cadenas, listas, tuplas, diccionarios)</li><li>Manipulación y operaciones con tipos de datos en Python</li><li>Creación y uso de funciones y procedimientos en Python</li><li>Definición y utilización de clases y objetos en Python</li><li>Trabajo con módulos y paquetes en Python</li><li>Creación y gestión de entornos virtuales (`venv`)</li><li>Instalación y uso de paquetes externos con `pip`</li><li>Desarrollo y organización de proyectos Python</li><li>Implementación y documentación de módulos personalizados</li><li>Uso del módulo `sys` para interactuar con el sistema y la configuración</li><li>Aplicación del módulo `utils` para funciones y utilidades comunes</li><li>Manejo de excepciones y errores en Python</li><li>Desarrollo de scripts y programas Python eficientes y legibles</li><li>Pruebas unitarias y depuración de código en Python</li><li>Despliegue y distribución de aplicaciones Python</li></ol>';
+                            break;
+                        case 'btn4':
+                            competenciasTitulo.innerText = 'Competencias de Linux Essentials';
+                            listaCompetencias.innerHTML = '<h5>Linux Essentials</h5><ol><li>Comprender la filosofía y arquitectura de Linux</li><li>Instalación y configuración de sistemas Linux</li><li>Gestión de usuarios, grupos y permisos</li><li>Uso de la línea de comandos (CLI) y scripting básico</li><li>Administración de archivos y directorios</li><li>Configuración y mantenimiento de servicios de red</li><li>Seguridad básica del sistema y configuración de cortafuegos</li><li>Monitoreo y resolución de problemas en sistemas Linux</li><li>Uso eficiente de paquetes y gestión de software</li><li>Configuración y administración de impresoras y dispositivos</li><li>Acceso remoto y transferencia de archivos a través de SSH y SCP</li><li>Colaboración en entornos multiusuario y redes</li></ol>';
+                            break;
+                        case 'btn5':
+                            competenciasTitulo.innerText = 'Competencias de Machine Learning con Python';
+                            listaCompetencias.innerHTML = '<h5>Machine Learning Aplicado usando Python</h5><ol><li>Comprensión de los fundamentos del Machine Learning</li><li>Conocimiento de algoritmos de aprendizaje supervisado y no supervisado</li><li>Capacidad para preprocesar y explorar conjuntos de datos</li><li>Implementación de modelos de regresión y clasificación</li><li>Validación y evaluación de modelos de Machine Learning</li><li>Aplicación de técnicas de selección y extracción de características</li><li>Desarrollo de modelos de aprendizaje profundo con bibliotecas como TensorFlow y Keras</li><li>Optimización de hiperparámetros para mejorar el rendimiento del modelo</li><li>Aplicación de Machine Learning en problemas del mundo real</li><li>Interpretación de resultados y toma de decisiones basada en modelos</li><li>Comprensión ética y responsable en el uso de Machine Learning</li><li>Documentación y presentación efectiva de resultados</li></ol><h5>Python y Bibliotecas</h5><ol><li>Programación avanzada en Python</li><li>Manipulación y limpieza de datos con Pandas</li><li>Uso efectivo de NumPy para operaciones numéricas</li><li>Visualización de datos con Matplotlib y Seaborn</li><li>Implementación de algoritmos de Machine Learning con scikit-learn</li><li>Utilización de Jupyter Notebooks para análisis interactivo</li><li>Trabajo con datos en formatos diversos (CSV, Excel, JSON, etc.)</li><li>Exploración de datos y estadísticas descriptivas</li><li>Preprocesamiento de datos para su aplicación en modelos de Machine Learning</li><li>Optimización de código y rendimiento con Python</li><li>Integración de modelos de Machine Learning en aplicaciones Python</li><li>Colaboración y control de versiones con Git y GitHub</li></ol>';
+                            break;
+                    }
+                    setTimeout(function () {
+                        divEscritura.style.height = '315px';
+                        divEscritura.style.display = 'block';
+                        divEscritura.style.overflowY = 'scroll';
+                        divEscritura.scrollTo(0,0);
+                    }, 100);
+                    ultimaVisibilidad = btnId;
+                }
+            }
+            document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.section');
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const targetId = link.getAttribute('href').slice(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 56,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        </script>
+    </body>
+</html>
