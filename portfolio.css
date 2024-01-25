@@ -132,8 +132,10 @@
     background-color: white; /* Color de fondo activo */
     color: black; /* Color de texto activo */
 }
-@media all and (max-width: 991px) {
-	
+@media all and (max-width: 700px) {
+	.navbar-nav {
+		margin-left: 0px;
+	}
 	.offcanvas-header{ display:block; }
 
 	.mobile-offcanvas{
