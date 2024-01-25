@@ -1,12 +1,9 @@
-#body{
-    width: 100%;
-    height: 100vh;
-    align-items: center;
+body {
+    padding-top: 56px; /* Ajuste para el navbar fijo */
 }
-#general{
-    top: 0;
-    width: 100%;
-    height: 100vh;
+
+#general {
+    padding-top: 56px; /* Ajuste para el navbar fijo */
 }
 #banner{
     width: 100%;
@@ -23,19 +20,20 @@
     justify-content: flex-end; /* Alinea los elementos a la derecha */
 }
 
-.navbar-brand {
-    margin-right: auto; /* Empuja el logo hacia la izquierda */
+.navbar {
+    background-color: #333; /* Color de fondo del navbar */
 }
 
-.navbar-nav {
-    margin-left: 20px; /* Añade espacio entre los elementos del menú */
+.navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo */
 }
 
 .navbar-nav .nav-link {
-    padding-right: 15px; /* Ajusta el espacio entre los elementos del menú */
-    padding-left: 15px;
+    padding: 15px; /* Ajusta el espacio entre los elementos del menú */
+    color: white; /* Color del texto en el navbar */
 }
-.navbar-nav .nav-link.active,.navbar-nav .nav-link:hover {
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
     background-color: white;
     color: black; /* Cambia el color al pasar el mouse sobre el elemento */
 }
