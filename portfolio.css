@@ -41,6 +41,7 @@ body {
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
         color: black;
+        background-color: #f0f0f0; 
         font-size: 3vw; /* Ajuste de tamaño de fuente para dispositivos móviles en viewport width */
     }
 }
