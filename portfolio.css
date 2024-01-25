@@ -37,6 +37,11 @@ body {
     background-color: white;
     color: black; /* Cambia el color al pasar el mouse sobre el elemento */
 }
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        color: black; /* Color del texto en dispositivos móviles */
+    }
+}
 #acerca{
     padding-top: 8vh;
 }
