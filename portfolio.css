@@ -39,7 +39,8 @@ body {
 }
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
-        color: black; /* Color del texto en dispositivos móviles */
+        color: black;
+        font-size: 12px;
     }
 }
 #acerca{
