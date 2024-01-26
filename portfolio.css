@@ -94,6 +94,9 @@
     justify-content: space-around;
     width: 100%;
 }
+#proyectos{
+    margin-left: 25%;
+}
 .proyecto-card {
     background-color: #fff;
     border-radius: 8px;
