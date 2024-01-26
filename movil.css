@@ -21,6 +21,7 @@
 }
 #navbarNav {
     justify-content: flex-end;
+    margin-bottom: 3vh;
 }
 .navbar-brand {
     margin-right: auto;
