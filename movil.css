@@ -95,7 +95,7 @@
     color: #007bff; /* Color para los títulos */
 }
 .proyecto-card-container {
-    justify-content: space-around;
+    
     left: 0;
     right: 0;
     align-items: center;
