@@ -105,6 +105,10 @@
     text-align: center;
     width: 100%;
 }
+#proyectos h4{
+    left: 0;
+    right: 0;
+}
 .proyecto-card img {
     max-width: 100%;
     height: auto;
