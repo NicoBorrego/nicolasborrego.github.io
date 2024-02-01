@@ -90,6 +90,24 @@
 .experiencia-item h5 {
     color: #007bff; /* Color para los títulos */
 }
+.proyecto-item-container {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Espacio entre cada experiencia laboral */
+    justify-content: space-around;
+}
+.proyecto-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+.proyecto-item h5 {
+    color: #007bff; /* Color para los títulos */
+}
 .proyecto-card-container {
     justify-content: space-around;
     width: 100%;
